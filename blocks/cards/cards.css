@@ -1,23 +1,27 @@
 .cards > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 16px;
+   display:block;
+   list-style: none;
+   margin: 0;
+   padding: 0; 
+   max-width: 300px; 
 }
 
 .cards > ul > li {
+    display: inline-flex;
+    flex-direction: row;
     border: 1px solid var(--highlight-background-color);
     background-color: var(--background-color)
 }
 
 .cards .cards-card-body {
-    margin: 16px;
+    width:70%;
+    margin: 10px;
+    font-size:  var(--body-font-size-xs);
 }
 
 .cards .cards-card-image {
     line-height: 0;
+    width: 30%;
 }
 
 .cards .cards-card-body > *:first-child {
