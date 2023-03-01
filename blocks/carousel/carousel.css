@@ -11,9 +11,15 @@
 }
 .carousel {
     display: flex;
+    overflow: hidden;
 }
 
 .carousel div {
     padding: 16px 8px;
     height: 250px;
+}
+
+.carousel-wrapper {
+    width: 1000px;
+    Margin-left: 20%;
 }
