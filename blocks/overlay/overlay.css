@@ -1,0 +1,54 @@
+.background-overlay {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 0 !important;
+}
+
+.background-overlay > div > div:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background-overlay img {
+    opacity: .5;
+    width: 100%;
+}
+
+.background-overlay > div > div:last-child p:first-child {
+    -webkit-font-smoothing: antialiased;
+    font-family: GeoBrandBold,CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1.273;
+    text-transform: uppercase;
+}
+
+.background-overlay > div > div:last-child p:nth-child(2) {
+    -webkit-font-smoothing: antialiased;
+    font-family: GeoEditRegular,Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    letter-spacing: .1px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.background-overlay > div > div:last-child p:nth-child(3) {
+    background-image: linear-gradient(120deg,#fc0,#fc0);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 0;
+    text-decoration: none;
+    -webkit-transition: background-size .125s ease-in;
+    -o-transition: background-size .125s ease-in;
+    transition: background-size .125s ease-in;
+}
+
+.background-overlay > div > div:last-child p:nth-child(3) a {
+    border-bottom: 2px solid #fc0;
+}

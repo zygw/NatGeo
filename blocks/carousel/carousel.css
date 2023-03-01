@@ -1,0 +1,19 @@
+.carousel img {
+    height: 250px;
+    width: auto;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.carousel img:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+.carousel {
+    display: flex;
+}
+
+.carousel div {
+    padding: 16px 8px;
+    height: 250px;
+}
