@@ -12,8 +12,8 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
+  --link-color: #fff;
+  --link-hover-color: #fc0;
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
@@ -39,6 +39,31 @@
 
   /* nav height */
   --nav-height: 64px;
+
+  /* from franklin eyedropper
+/* fonts */
+--heading-font-family: GeoBrandRegular, CenturyGothic, AppleGothic, "Gill Sans", "Gill Sans MT", sans-serif;
+--body-font-family: GeoBrandRegular, CenturyGothic, AppleGothic, "Gill Sans", "Gill Sans MT", sans-serif;
+--fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
+
+/* colors */
+--text-color: #000000;
+--link-color: #fff;
+--link-hover-color: #fc0;
+--background-color: #ffffff;
+--overlay-background-color: #eeeeee;
+--highlight-background-color: #cccccc;
+
+/* sizes */
+--heading-font-size-xxl: 32px;
+--heading-font-size-xl: 24px;
+--heading-font-size-l: 18.72px;
+--heading-font-size-m: 16px;
+--heading-font-size-s: 13.28px;
+--heading-font-size-xs: 10.72px;
+--body-font-size-l: 22px;
+--body-font-size-m: 16px;
+--body-font-size-s: 12px;
 
 }
 
@@ -107,6 +132,7 @@ pre {
 
 /* buttons */
 
+/*
 a.button:any-link, button {
   font-family: var(--body-font-family);
   display: inline-block;
@@ -125,6 +151,13 @@ a.button:any-link, button {
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 30px;
+}
+*/
+
+a.button:any-link, button {
+  inline-size: 150px;
+  overflow-wrap: break-word;
+  color:#fff;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
@@ -162,8 +195,14 @@ main input:hover {
   border: 1px solid var(--text-color);
 }
 
+main,
 main .section {
   padding: 64px 16px;
+  background-color: #000;
+}
+
+main {
+  padding: 0px;
 }
 
 main pre {
@@ -198,15 +237,15 @@ hr {
   border-bottom: 1px solid var(--overlay-background-color);
 }
 
-main img {
+/*main img {
   max-width: 100%;
   width: auto;
   height: auto;
-}
+}*/
 
 @media (min-width: 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 64px 0;
   }  
 }
 
@@ -221,7 +260,7 @@ main img {
   }
   
   .section > div {
-    max-width: 400px;
+    max-width: 1200px;
     margin: auto;
   }
 }
@@ -234,4 +273,15 @@ main .section[data-section-status='initialized'] {
 
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+main .default-content-wrapper {
+  background-color: #000;
+  color: #fff;
+}
+
+.zoomcards-container {
+  display: inline-flex;
+  padding-left: 15% !important;
+  padding-top: 0 !important;
 }
