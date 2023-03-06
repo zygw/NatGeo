@@ -66,6 +66,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .sign-up-overlay img {
@@ -81,6 +82,7 @@
     letter-spacing: 3px;
     line-height: 1.273;
     text-transform: uppercase;
+    /* width: 100%; */
 }
 
 .sign-up-overlay > div > div:last-child p:nth-child(2) {
